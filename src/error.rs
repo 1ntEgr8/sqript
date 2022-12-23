@@ -1,6 +1,7 @@
-#[derive(Debug, Clone)]
+#[derive(Debug)]
 pub enum SrError {
     NixError(nix::errno::Errno),
+    IoError(std::io::Error),
 }
 
 impl From<nix::errno::Errno> for SrError {
@@ -9,4 +10,8 @@ impl From<nix::errno::Errno> for SrError {
     }
 }
 
-
+impl From<std::io::Error> for SrError {
+    fn from(err: std::io::Error) -> SrError {
+        SrError::IoError(err)
+    }
+}
