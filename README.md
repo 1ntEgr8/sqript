@@ -1,21 +1,21 @@
-# sr
+# sqript
 
 Make a typescript of a terminal session in the style of the `script` command.
 
 ## Installation
 
 ```bash
-$ cargo install sr
+$ cargo install sqript
 ```
 
 ## Usage
 
 ```bash
 # Record a session
-$ sr <file name>
+$ sqript <file name>
 
 # Print help
-$ sr --help
+$ sqript --help
 ```
 
 ## Comments
