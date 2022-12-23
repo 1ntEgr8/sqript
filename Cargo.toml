@@ -2,6 +2,10 @@
 name = "sr"
 version = "0.1.0"
 edition = "2021"
+license = "MIT"
+repository = "https://github.com/1ntEgr8/sr"
+readme = "README.md"
+description = "Make a typescript of a terminal session in the style of the `script` command"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
